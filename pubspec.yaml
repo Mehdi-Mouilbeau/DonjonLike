@@ -1,0 +1,79 @@
+name: flutter_rpg
+description: A 2D RPG game built with Flutter and Flame Engine.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.14.0
+  flame_audio: ^2.0.0
+  video_player: ^2.8.2
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  json_annotation: ^4.8.1
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+  mocktail: ^1.0.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/sprites/julie.png
+    - assets/images/sprites/portrait.png
+    - assets/images/sprites/chat1.png
+    - assets/images/sprites/chat2.png
+    - assets/images/sprites/chat3.png
+    - assets/images/sprites/chat4.png
+    - assets/images/sprites/chat5.png
+    - assets/images/sprites/chat6.png
+    - assets/images/sprites/pedestal_book.png
+    - assets/images/sprites/medieval_walls.png
+    - assets/images/sprites/floor1.png
+    - assets/images/sprites/doors.png
+    - assets/data/doors.json
+    - assets/images/walls/wall_top_left.png
+    - assets/images/walls/wall_top_right.png
+    - assets/images/walls/wall_bottom_left.png
+    - assets/images/walls/wall_bottom_right.png
+    - assets/audio/door_unlock.mp3
+    - assets/audio/stage1.mp3
+    - assets/audio/stage2.mp3
+    - assets/audio/stage3.mp3
+    - assets/audio/stage4.mp3
+    - assets/audio/stage5.mp3
+    - assets/audio/stage6.mp3
+    - assets/audio/stage7.mp3
+    - assets/audio/stage8.mp3
+    - assets/audio/stage9.mp3
+    - assets/audio/stage10.mp3
+    - assets/audio/stage11.mp3
+    - assets/audio/dance_on_your_graves.mp3
+    - assets/audio/secret_reveal.mp3
+    - assets/video/intro.mp4
+    - assets/images/sprites/room1.png
+    - assets/images/sprites/room2.png 
+    - assets/images/sprites/room3.png 
+    - assets/images/sprites/room4.png 
+    - assets/images/sprites/room5.png 
+    - assets/images/sprites/room6.png 
+    - assets/images/sprites/room7.png 
+    - assets/images/sprites/room8.png 
+    - assets/images/sprites/room9.png 
+    - assets/images/sprites/room10.png 
+    - assets/images/sprites/room11.png
+

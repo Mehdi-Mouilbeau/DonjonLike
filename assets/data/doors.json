@@ -1,0 +1,266 @@
+[
+  {
+    "id": "door_1",
+    "level": 1,
+    "label": "Porte de la Sagesse",
+    "code4": "7392",
+    "hint": "Cherche un endroit; on peu laisser le pain dehors, ou le mettre dans un endroit pour ne pas qu’il sèche.",
+    "questions": [
+      {
+        "questionText": "Quel est le nom de l’épée en acier valyrien de Jon Snow ?",
+        "options": ["Glace", "Aiguille", "Longclaw (Grand-Griffe)", "Éclat d’Aube"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Comment appelle-t-on un petit du chat ?",
+        "options": ["Chaton", "Chiot", "Poulin", "Lapereau"],
+        "correctIndex": 0
+      },
+      {
+        "questionText": "En quelle année est tombé le mur de Berlin ?",
+        "options": ["1979", "1985", "1989", "1991"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "door_2",
+    "level": 2,
+    "label": "Porte des Echos",
+    "code4": "4816",
+    "hint": "Un meuble paternel. 3 sur 3, trouve l’endroit et tu auras.",
+    "questions": [
+      {
+        "questionText": "Qui est le véritable père de Jon Snow ?",
+        "options": ["Eddard Stark", "Rhaegar Targaryen", "Robert Baratheon", "Jaime Lannister"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "Combien de pattes possède un chat adulte en bonne santé ?",
+        "options": ["2", "3", "4", "5"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Qui a peint « La Nuit étoilée » ?",
+        "options": ["Claude Monet", "Pablo Picasso", "Vincent van Gogh", "Salvador Dalí"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "door_3",
+    "level": 3,
+    "label": "Porte du Savoir",
+    "code4": "0573",
+    "hint": "Fin des cadeaux à partir d’aujourd’hui, regroupe les mots et trouve la phrases. « tu sauras »",
+    "questions": [
+      {
+        "questionText": "Quel est le nom du continent principal où se déroule la majeure partie de la série ?",
+        "options": ["Essos", "Westeros", "Sothoryos", "Ulthos"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "Quel sens est particulièrement développé chez le chat : la vue, l’odorat ou l’ouïe ?",
+        "options": ["La vue", "L’odorat", "L’ouïe", "Le goût"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Quelle est la capitale du Canada ?",
+        "options": ["Toronto", "Montréal", "Ottawa", "Vancouver"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "door_4",
+    "level": 4,
+    "label": "Porte de l'Ombre",
+    "code4": "9241",
+    "hint": "« lors ce que »",
+    "questions": [
+      {
+        "questionText": "Quel surnom donne-t-on à Tyrion Lannister ?",
+        "options": ["Le Renard", "Le Lutin (The Imp)", "Le Lion", "Le Corbeau"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "Les chats transpirent-ils principalement par les coussinets ou par la langue ?",
+        "options": ["Par la langue", "Par les coussinets", "Par les oreilles", "Ils ne transpirent pas"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "Quel est l’élément chimique dont le symbole est Au ?",
+        "options": ["Argent", "Or", "Aluminium", "Azote"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "door_5",
+    "level": 5,
+    "label": "Porte du Serpent",
+    "code4": "6085",
+    "hint": "« quoi faire »",
+    "questions": [
+      {
+        "questionText": "Quelle maison a pour devise « Unbowed, Unbent, Unbroken » ?",
+        "options": ["Stark", "Martell", "Tyrell", "Tully"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "Comment s’appelle le bruit que fait un chat lorsqu’il est détendu et heureux ?",
+        "options": ["Le miaulement", "Le feulement", "Le ronronnement", "Le grognement"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Qui a découvert la pénicilline ?",
+        "options": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Isaac Newton"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "door_6",
+    "level": 6,
+    "label": "Porte du Gladiateur",
+    "code4": "3729",
+    "hint": "« plus tard »",
+    "questions": [
+      {
+        "questionText": "Comment s’appelle la capitale des Sept Couronnes ?",
+        "options": ["Winterfell", "Port-Réal (King’s Landing)", "Pentos", "Braavos"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "Combien de dents possède en moyenne un chat adulte ?",
+        "options": ["26", "28", "30", "32"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Quelle est la plus grande planète du système solaire ?",
+        "options": ["Saturne", "Jupiter", "Neptune", "Uranus"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "door_7",
+    "level": 7,
+    "label": "Porte du Vortex",
+    "code4": "8154",
+    "hint": "« départ »",
+    "questions": [
+      {
+        "questionText": "Quel est le nom du dragon de Daenerys tué au-delà du Mur et ressuscité par le Roi de la Nuit ?",
+        "options": ["Drogon", "Rhaegal", "Viserion", "Balerion"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Les chats sont-ils plutôt carnivores, herbivores ou omnivores ?",
+        "options": ["Herbivores", "Omnivores", "Carnivores stricts", "Frugivores"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Quel philosophe a écrit « Le Contrat social » ?",
+        "options": ["Voltaire", "Montesquieu", "Jean-Jacques Rousseau", "Descartes"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "door_8",
+    "level": 8,
+    "label": "Porte du Prisme",
+    "code4": "2907",
+    "hint": "« tu entendra »",
+    "questions": [
+      {
+        "questionText": "Quelle maison règne sur les Îles de Fer ?",
+        "options": ["Greyjoy", "Arryn", "Baratheon", "Bolton"],
+        "correctIndex": 0
+      },
+      {
+        "questionText": "Comment appelle-t-on la période pendant laquelle une chatte peut se reproduire ?",
+        "options": ["La gestation", "Les chaleurs", "La mue", "Le sevrage"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "Quel pays a remporté la Coupe du monde de football en 2014 ?",
+        "options": ["Brésil", "Argentine", "Allemagne", "France"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "door_9",
+    "level": 9,
+    "label": "Porte du Minotaure",
+    "code4": "5468",
+    "hint": "« 2 heures »",
+    "questions": [
+      {
+        "questionText": "Comment s’appelle l’épée de Ned Stark ?",
+        "options": ["Aiguille", "Glace (Ice)", "Longclaw", "Heartsbane"],
+        "correctIndex": 1
+      },
+      {
+        "questionText": "En moyenne, combien d’heures par jour un chat dort-il ?",
+        "options": ["6 à 8", "8 à 10", "12 à 16", "18 à 22"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Quel est le nom scientifique de l’os de la cuisse ?",
+        "options": ["Humérus", "Tibia", "Fémur", "Radius"],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "door_10",
+    "level": 10,
+    "label": "Porte du Miroir",
+    "code4": "1380",
+    "hint": "« la musique »",
+    "questions": [
+      {
+        "questionText": "Quelle maison règne sur les Îles de Fer ?",
+        "options": ["Greyjoy", "Arryn", "Baratheon", "Bolton"],
+        "correctIndex": 0
+      },
+      {
+        "questionText": "Comment appelle-t-on les longs poils rigides situés autour du museau du chat ?",
+        "options": ["Les vibrisses (moustaches)", "Les crins", "Les plumes", "Les cils"],
+        "correctIndex": 0
+      },
+      {
+        "questionText": "Qui a écrit « Les Misérables » ?",
+        "options": ["Émile Zola", "Victor Hugo", "Gustave Flaubert", "Albert Camus"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "door_11",
+    "level": 11,
+    "label": "Porte de l'Aube",
+    "code4": "7624",
+    "hint": "Une musique et 2h plus tard le départ . Lorsque tu entendras la musique, tu sauras quoi faire. Que ton oreille soit prête.",
+    "questions": [
+      {
+        "questionText": "Qui est le dernier roi à siéger sur le Trône de Fer dans la série ?",
+        "options": ["Daenerys Targaryen", "Jon Snow", "Bran Stark (Bran le Brisé)", "Tyrion Lannister"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Quel organe le chat utilise-t-il pour percevoir son équilibre et toujours retomber sur ses pattes ?",
+        "options": ["La queue", "Les moustaches", "L’oreille interne", "Les pattes"],
+        "correctIndex": 2
+      },
+      {
+        "questionText": "Quelle est la langue la plus parlée au monde en nombre de locuteurs natifs ?",
+        "options": ["Anglais", "Espagnol", "Mandarin", "Hindi"],
+        "correctIndex": 2
+      }
+    ]
+  }
+]
