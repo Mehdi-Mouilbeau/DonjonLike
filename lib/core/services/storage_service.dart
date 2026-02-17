@@ -10,6 +10,16 @@ class StorageService {
     _box = await Hive.openBox(StorageKeys.boxName);
   }
 
+  static const String _currentLevelKey = 'current_level';
+
+  static int getCurrentLevel() {
+    return (_box.get(_currentLevelKey) as int?) ?? 1;
+  }
+
+  static Future<void> setCurrentLevel(int level) {
+    return _box.put(_currentLevelKey, level);
+  }
+
   // ── Player name ───────────────────────────────────────────────
   static String? getPlayerName() => _box.get(StorageKeys.playerName) as String?;
 

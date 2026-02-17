@@ -1,5 +1,5 @@
 import 'package:flame/components.dart';
-import 'package:flutter_rpg/game/levels/level_layout.dart';
+import 'package:julie_rpg/game/levels/level_layout.dart';
 
 import '../../core/constants/asset_paths.dart';
 import '../../domain/entities/door.dart';

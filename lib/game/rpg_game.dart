@@ -4,9 +4,9 @@ import 'package:flame/game.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_rpg/core/constants/game_constants.dart';
-import 'package:flutter_rpg/core/services/storage_service.dart';
-import 'package:flutter_rpg/game/levels/level_layout.dart';
+import 'package:julie_rpg/core/constants/game_constants.dart';
+import 'package:julie_rpg/core/services/storage_service.dart';
+import 'package:julie_rpg/game/levels/level_layout.dart';
 
 import '../domain/entities/door.dart';
 import 'components/door_component.dart';
@@ -22,6 +22,7 @@ class OverlayKeys {
   static const String hint = 'HintOverlay';
   static const String welcome = 'WelcomeOverlay';
   static const String endCredits = 'EndCreditsOverlay';
+  static const lostHint = 'lost_hint';
 }
 
 enum GameScene { corridor, room }
@@ -77,6 +78,8 @@ class RPGGame extends FlameGame with HasCollisionDetection, KeyboardEvents {
 
     camera.viewfinder.zoom = GameConstants.cameraZoom;
 
+    final savedLevel = StorageService.getCurrentLevel();
+    _levelIndex = (savedLevel - 1).clamp(0, totalLevels - 1);
     await _loadCorridorScene();
   }
 
@@ -99,7 +102,7 @@ class RPGGame extends FlameGame with HasCollisionDetection, KeyboardEvents {
     _nearbyDoor = null;
 
     overlays.remove(OverlayKeys.interact);
-    
+
     camera.viewfinder.zoom = GameConstants.cameraZoom;
     camera.viewfinder.anchor = Anchor.center;
 
@@ -155,11 +158,11 @@ class RPGGame extends FlameGame with HasCollisionDetection, KeyboardEvents {
   Future<void> goToNextLevel() async {
     if (_levelIndex < totalLevels - 1) {
       _levelIndex++;
+      await StorageService.setCurrentLevel(currentLevel);
       _currentDoor = null;
       _roomScene = null;
       await _loadCorridorScene();
     } else {
-      // Fin (tu peux mettre un écran victoire plus tard)
       await _loadCorridorScene();
     }
   }

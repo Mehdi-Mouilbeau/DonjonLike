@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:flame/components.dart';
 import 'package:flame/particles.dart';
 import 'package:flame_audio/flame_audio.dart';
-import 'package:flutter_rpg/core/constants/asset_paths.dart';
+import 'package:julie_rpg/core/constants/asset_paths.dart';
 
 import '../../core/constants/game_constants.dart';
 import '../../domain/entities/door.dart';

@@ -57,10 +57,10 @@ class GameController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void submitCode(String code) {
+  Future<void> submitCode(String code) async {
     if (_activeDoor == null) return;
 
-    final result = enterDoorUseCase.execute(_activeDoor!, code);
+    final result = await enterDoorUseCase.execute(_activeDoor!, code);
 
     switch (result) {
       case EnterDoorSuccess():
@@ -131,9 +131,10 @@ class GameController extends ChangeNotifier {
       case QuizFailed():
         _showQuiz = false;
         _game?.overlays.remove(OverlayKeys.quiz);
-        _lockErrorMessage = 'Mauvaises reponses ! La porte se referme...';
-        _goNextAfterHint = false;
-        _game?.returnToCorridor();
+
+        // Affiche bulle dramatique
+        _game?.overlays.add(OverlayKeys.lostHint);
+
         break;
     }
 

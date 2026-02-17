@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
-import 'package:flutter_rpg/core/constants/asset_paths.dart';
+import 'package:julie_rpg/core/constants/asset_paths.dart';
 
 import '../../core/constants/game_constants.dart';
 import '../rpg_game.dart';

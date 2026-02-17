@@ -13,7 +13,7 @@ class GameConstants {
   static const double animationStepTime = 0.15;
 
   // Cooldown
-  static const int cooldownDays = 7;
+  static const int cooldownDays = 5;
 
   // Door code
   static const int codeLength = 4;
@@ -22,14 +22,14 @@ class GameConstants {
   static const int questionsPerDoor = 3;
 
   // Camera
-  static const double cameraZoom = 0.7;
+  static const double cameraZoom = 0.5;
 
   // Corridor layout
   static const double corridorWidth = 350.0;
   static const double corridorHeight = 800.0;
   static const double doorWidth = 110.0;
-  static const double doorHeight = 130.0;
-  static const double doorSpacing = 140.0;
+  static const double doorHeight = 150.0;
+  static const double doorSpacing = 160.0;
   static const double wallThickness = 48.0;
   static const double corridorLWidth = 800.0;
   static const double corridorLHeight = 1000.0;

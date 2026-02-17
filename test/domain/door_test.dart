@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_rpg/domain/entities/door.dart';
-import 'package:flutter_rpg/domain/entities/question.dart';
+import 'package:julie_rpg/domain/entities/door.dart';
+import 'package:julie_rpg/domain/entities/question.dart';
 
 Door _makeDoor({
   DoorStatus status = DoorStatus.locked,

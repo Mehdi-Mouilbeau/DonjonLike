@@ -1,10 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_rpg/core/services/time_service.dart';
-import 'package:flutter_rpg/domain/entities/door.dart';
-import 'package:flutter_rpg/domain/entities/question.dart';
-import 'package:flutter_rpg/domain/repositories/door_repository.dart';
-import 'package:flutter_rpg/domain/usecases/enter_door_usecase.dart';
+import 'package:julie_rpg/core/services/time_service.dart';
+import 'package:julie_rpg/domain/entities/door.dart';
+import 'package:julie_rpg/domain/entities/question.dart';
+import 'package:julie_rpg/domain/repositories/door_repository.dart';
+import 'package:julie_rpg/domain/usecases/enter_door_usecase.dart';
 
 /// Fake door repository for testing (no Hive dependency).
 class FakeDoorRepository implements DoorRepository {

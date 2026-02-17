@@ -1,8 +1,9 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_rpg/presentation/overlays/end_credits_overlay.dart';
-import 'package:flutter_rpg/presentation/overlays/welcome_overlay.dart';
+import 'package:julie_rpg/presentation/overlays/end_credits_overlay.dart';
+import 'package:julie_rpg/presentation/overlays/lost_hint_overlay.dart';
+import 'package:julie_rpg/presentation/overlays/welcome_overlay.dart';
 
 import '../../game/rpg_game.dart';
 import '../controllers/game_controller.dart';
@@ -79,6 +80,8 @@ class _GameScreenState extends ConsumerState<GameScreen> {
                   ),
               OverlayKeys.endCredits: (context, game) =>
                   EndCreditsOverlay(game: game as RPGGame),
+              OverlayKeys.lostHint: (_, game) =>
+                  LostHintOverlay(game: game as RPGGame),
             },
           );
         },

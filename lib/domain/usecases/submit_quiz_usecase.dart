@@ -28,14 +28,16 @@ class SubmitQuizUseCase {
     if (door.validateQuiz(answers)) {
       door.status = DoorStatus.succeeded;
       door.lastSuccessDate = now;
+
       await _doorRepository.saveDoorStatus(door);
-      await _doorRepository.setLastDoorEntryDate(now);
       await _doorRepository.unlockHint(door.id);
+
       return QuizSuccess(door.hint);
     } else {
+      // ❌ Porte définitivement perdue
       door.status = DoorStatus.failed;
-      door.lastAttemptDate = now;
       await _doorRepository.saveDoorStatus(door);
+
       return QuizFailed();
     }
   }

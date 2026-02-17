@@ -12,11 +12,11 @@ Future<void> main() async {
   await Hive.initFlutter();
   await StorageService.init();
 
-  if (kDebugMode) {
-    //  l'intro se rejouera à chaque run en debug
-    // (ça clears tout)
-    await StorageService.clearAll();
-  }
+  // if (kDebugMode) {
+  //   //  l'intro se rejouera à chaque run en debug
+  //   // (ça clears tout)
+  //   await StorageService.clearAll();
+  // }
 
   runApp(
     const ProviderScope(

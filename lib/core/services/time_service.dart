@@ -15,8 +15,7 @@ class TimeService {
 
   /// Check if at least [days] have passed since [date].
   bool hasCooldownExpired(DateTime? date, {int days = 5}) {
-    return true;
-    // if (date == null) return true;
-    // return now.difference(date).inDays >= days;
+    if (date == null) return true;
+    return now.difference(date).inDays >= days;
   }
 }

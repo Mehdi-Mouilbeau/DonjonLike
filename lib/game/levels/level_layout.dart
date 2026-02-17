@@ -98,28 +98,35 @@ final List<LevelLayout> baseLevels = [
   ),
 
   // ─────────────────────────────────────────────────────────
-  // LEVEL 2: Couloir en L
-  // Objectif: porte en haut du couloir vertical (droite).
-  // ─────────────────────────────────────────────────────────
+// LEVEL 2: Couloir en L (refait)
+// Plus haut, moins large, couloir large (anti-collisions)
+// ─────────────────────────────────────────────────────────
   LevelLayout(
     level: 2,
     name: 'Couloir en L',
-    width: 800,
-    height: 1000,
+    width: 520,
+    height: 900,
     floorColor: const Color(0xFF000000),
     wallColor: const Color(0xFF000000),
     walls: const [
-      WallDef(0, 0, 800, 48),
-      WallDef(0, 0, 48, 1000),
-      WallDef(0, 952, 800, 48),
-      WallDef(752, 0, 48, 1000),
-      WallDef(0, 600, 500, 48),
-      WallDef(500, 0, 48, 600),
+      // ── murs extérieurs (épaisseur 20 comme les autres niveaux)
+      WallDef(0, 0, 520, 20), // top
+      WallDef(0, 880, 520, 20), // bottom
+      WallDef(0, 0, 20, 900), // left
+      WallDef(500, 0, 20, 900), // right
+
+      // ── “bloc plein” intérieur qui crée le couloir en L
+      // Laisse une bande de 180px en bas + 180px à droite (zone walkable)
+      WallDef(20, 20, 300, 680),
     ],
+
+    // Porte en haut du couloir vertical (à droite)
     doorPlacements: const [
-      DoorPlacement(650, 100),
+      DoorPlacement(410, 70),
     ],
-    playerSpawn: Vector2(120, 800),
+
+    // Spawn dans le couloir horizontal (en bas à gauche)
+    playerSpawn: Vector2(80, 790),
   ),
 
   // ─────────────────────────────────────────────────────────

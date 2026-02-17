@@ -33,7 +33,7 @@ class EnterDoorUseCase {
         _timeService = timeService;
 
   /// Attempt to enter a door with the given code.
-  EnterDoorResult execute(Door door, String code) {
+  Future<EnterDoorResult> execute(Door door, String code) async {
     // Already succeeded — show hint directly.
     if (door.isSucceeded) {
       return EnterDoorAlreadySucceeded();
@@ -44,8 +44,7 @@ class EnterDoorUseCase {
     if (!_timeService.hasCooldownExpired(lastEntry,
         days: GameConstants.cooldownDays)) {
       final daysElapsed = _timeService.now.difference(lastEntry!).inDays;
-      return EnterDoorGlobalCooldown(
-          GameConstants.cooldownDays - daysElapsed);
+      return EnterDoorGlobalCooldown(GameConstants.cooldownDays - daysElapsed);
     }
 
     // Per-door failed cooldown.
@@ -66,6 +65,9 @@ class EnterDoorUseCase {
     if (!door.validateCode(code)) {
       return EnterDoorWrongCode();
     }
+
+    // Ici on déclenche le cooldown global
+    await _doorRepository.setLastDoorEntryDate(_timeService.now);
 
     return EnterDoorSuccess();
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rpg/presentation/views/intro_screen.dart';
+import 'package:julie_rpg/presentation/views/intro_screen.dart';
 
 import '../../presentation/views/name_entry_screen.dart';
 import '../../presentation/views/game_screen.dart';
@@ -23,7 +23,7 @@ class AppRouter {
           builder: (_) => const GameScreen(),
         );
       default:
-        return MaterialPageRoute(builder: (_) => const NameEntryScreen());
+        return MaterialPageRoute(builder: (_) => const IntroScreen());
     }
   }
 }
